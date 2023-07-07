@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 import 'package:task/controller/task1Controller.dart';
+import 'package:task/core/routes/routeNames.dart';
 import 'package:task/core/utils/appColors.dart';
 import 'package:task/model/Product.dart';
 import 'package:task/view/components/customActionContainer.dart';
@@ -24,6 +25,7 @@ class Task1Screen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  SizedBox(height: 5.h,),
                   Text(
                     "Product Add",
                     style: TextStyle(
@@ -75,9 +77,12 @@ class Task1Screen extends StatelessWidget {
                               task1controller.productPrice.value.text,
                             ),
                           );
+                          task1controller.productName.value.clear();
+                          task1controller.productDesc.value.clear();
+                          task1controller.productPrice.value.clear();
                           Get.back();
                           Prompts.showSuccess("Wow!",
-                              "Product is Added to List Tap Task2 to View it");
+                              "Product is Added to List Tap All Products");
                           print(task1controller.productList.length);
                         }
                       },

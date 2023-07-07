@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
           useMaterial3: true,
         ),
         // home:  MainScreen(),
-        initialRoute: RouteNames.mainScreen,
+        initialRoute: RouteNames.task2,
         getPages: AppRoutes.routes,
       );
     });

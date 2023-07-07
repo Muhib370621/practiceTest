@@ -10,7 +10,7 @@ class Prompts {
     return Get.snackbar(
       title,
       '',
-      duration: const Duration(seconds: 4),
+      duration: const Duration(seconds: 3),
       snackPosition: SnackPosition.BOTTOM,
       // margin: const EdgeInsets.all(25),
       backgroundColor: Colors.greenAccent.withOpacity(
@@ -39,7 +39,7 @@ class Prompts {
     return Get.snackbar(
       title,
       '',
-      duration: const Duration(seconds: 4),
+      duration: const Duration(seconds: 3),
       snackPosition: SnackPosition.BOTTOM,
       // margin: const EdgeInsets.all(25),
       backgroundColor: Colors.redAccent.withOpacity(

@@ -1,7 +1,7 @@
 class ProductModel {
-  final String productName;
-  final String productDesc;
-  final String productPrice;
+   String productName;
+   String productDesc;
+   String productPrice;
 
   ProductModel(
     this.productName,
